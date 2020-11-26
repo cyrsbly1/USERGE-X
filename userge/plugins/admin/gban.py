@@ -63,7 +63,7 @@ async def antispam_(message: Message):
 )
 async def gban_user(message: Message):
     """ ban a user globally """
-    await message.edit("`GBanning...`")
+    await message.edit("*GBanning...*")
     user_id, reason = message.extract_user_and_text
     if not user_id:
         await message.edit(
@@ -102,9 +102,9 @@ async def gban_user(message: Message):
         )
         return
     await message.edit(
-        r"\\**#GBanned_User**//"
+        r"\\**#GBanned**//"
         f"\n\n**First Name:** {mention_html(user_id, firstname)}\n"
-        f"**User ID:** `{user_id}`\n**Reason:** `{reason}`"
+        f"**User ID:** `{user_id}`\n**Reason:** __{reason}__"
     )
     # TODO: can we add something like "GBanned by {any_sudo_user_fname}"
     if message.client.is_bot:
