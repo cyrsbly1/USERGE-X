@@ -133,13 +133,8 @@ Nice To Meet You! I'm **{bot.first_name}** A Bot.
                         [
                             InlineKeyboardButton("CONTACT", url=f"t.me/{u_n}"),
                             InlineKeyboardButton(
-                                "REPO", url="https://github.com/code-rgb/USERGE-X"
+                                "FOLLOW", url="https://twitter.com/ryscuu25"
                             ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                "➕ ADD TO GROUP", callback_data="add_to_grp"
-                            )
                         ],
                     ]
                 ),
